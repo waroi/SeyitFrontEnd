@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: aquamarine;
+    width: 150px;
+    height: 150px;
+
+    transition: all 1s Ease;
+}
+
+.box:hover {
+    background-color: salmon;
+    width: 100px;
+    height: 100px;
+}

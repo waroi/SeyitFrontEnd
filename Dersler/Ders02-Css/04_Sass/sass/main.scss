@@ -1,0 +1,23 @@
+$bgColor: red;
+@mixin box($color, $width, $height) {
+  background-color: $color;
+  width: $width;
+  height: $height;
+}
+.container{
+  display: flex;
+  gap: 10px;
+  .box2{
+    @include box(green, 120px, 130px);
+  }
+  .box3{
+    @include box(orange, 50px, 75px);
+  }
+  .box1{
+    @include box(blue, 100px, 150px);
+    .box5{
+      @extend .box3;
+      background-color: $bgColor;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: " header header header header header"
+        "sidebar content content"
+        "sidebar . ."
+        "box1 box1 box1"
+        "footer footer footer";
+}

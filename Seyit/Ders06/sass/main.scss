@@ -8,44 +8,54 @@ $color-gainsboro: gainsboro;
 $color-orange: orange;
 $color-gray: gray;
 $color-dimgray: dimgray;
+
 @mixin bot-line($width, $style, $color) {
     border-bottom: $width $style $color;
 }
+
 @mixin display-flex($flexdirection, $justifycontent, $alignitems) {
     display: flex;
     flex-direction: $flexdirection;
     justify-content: $justifycontent;
     align-items: $alignitems;
 }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 .header {
     gap: 1rem;
     @include display-flex(column, center, center);
+
     .header-logo {
         width: 15vw;
         padding-top: 1rem;
     }
+
     .header-nav {
         @include display-flex(row, center, center);
+
         .header-button {
             padding: 0.5rem;
             border-radius: 0.5rem;
         }
+
         .header-button:hover {
             background-color: $color-darkorange;
         }
     }
 }
+
 .preview {
     @include display-flex(column, center, center);
     color: $color-aliceblue;
     height: 220px;
     padding: 3rem;
+
     .preview-banner {
         padding: 3rem;
         width: 100%;
@@ -56,6 +66,7 @@ $color-dimgray: dimgray;
         position: absolute;
         z-index: -2;
     }
+
     .preview-background {
         padding: 3rem;
         width: 100%;
@@ -67,6 +78,7 @@ $color-dimgray: dimgray;
         opacity: 65%;
         z-index: -1;
     }
+
     .preview-body {
         .preview-category {
             background-color: $color-darkcyan;
@@ -74,10 +86,12 @@ $color-dimgray: dimgray;
             border-radius: 1rem;
             padding: 0.2rem 1rem;
         }
+
         .preview-title {
             padding-top: 0.5rem;
             padding-left: 0.5rem;
         }
+
         .preview-content {
             overflow: hidden;
             text-overflow: ellipsis;
@@ -87,41 +101,49 @@ $color-dimgray: dimgray;
             line-clamp: 3;
             -webkit-box-orient: vertical;
         }
+
         .preview-button {
             background-color: $color-darkorange;
             width: max-content;
             padding: 0.2rem 1rem;
             margin-top: 0.75rem;
         }
+
         .button:hover {
             background-color: $color-orange;
             color: $color-gray;
         }
     }
 }
+
 .blog {
     .blog-title {
         margin-left: 10%;
         padding: 1rem 0;
     }
+
     .blog-list {
         @include display-flex(column, center, center);
         flex-wrap: wrap;
         flex-direction: row;
         padding-bottom: 2rem;
         gap: 1rem;
+
         .blog-list-item {
             @include display-flex(column, center, center);
             width: 80vw;
             background-color: $color-azure;
+
             .blog-list-item-img {
                 width: 95%;
                 margin-top: 1rem;
             }
+
             .blog-list-item-body {
                 display: flex;
                 flex-direction: column;
                 width: 95%;
+
                 .blog-list-item-category {
                     background-color: $color-darkcyan;
                     width: max-content;
@@ -129,10 +151,12 @@ $color-dimgray: dimgray;
                     padding: 0.2rem 1rem;
                     margin-top: 0.5rem
                 }
+
                 .blog-list-item-title {
                     color: $color-black;
                     padding: 0.25rem 0
                 }
+
                 .blog-list-item-content {
                     color: $color-black;
                     padding-bottom: 1.5rem;
@@ -142,16 +166,20 @@ $color-dimgray: dimgray;
         }
     }
 }
+
 .footer {
     @include display-flex(column, center, center);
     background-color: $color-gray;
+
     .footer-section {
         width: 80vw;
+
         .footer-about {
             .footer-about-logo {
                 width: 20vw;
                 padding-top: 1rem;
             }
+
             .footer-about-content {
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
@@ -159,18 +187,22 @@ $color-dimgray: dimgray;
                 color: $color-aliceblue;
             }
         }
+
         .join {
             padding-top: 1rem;
             color: $color-aliceblue;
             padding-bottom: 1rem;
             @include bot-line(1px, dotted, $color-black );
+
             .join-content {
                 padding: 0.75rem 0rem;
             }
+
             .join-inputtext {
                 width: 100%;
                 height: 2rem;
             }
+
             .join-button {
                 width: 100%;
                 height: 2rem;
@@ -179,16 +211,20 @@ $color-dimgray: dimgray;
                 margin-top: 0.5rem;
             }
         }
+
         .links {
             display: flex;
             flex-direction: column;
             color: $color-aliceblue;
+
             .links-title {
                 margin-top: 0.5rem;
                 margin-bottom: 0.5rem
             }
+
             .links-body {
                 @include display-flex(column, flex-start, flex-start);
+
                 .link-item {
                     color: $color-aliceblue;
                     text-decoration-line: none;
@@ -198,20 +234,24 @@ $color-dimgray: dimgray;
                 }
             }
         }
+
         .followus {
             color: $color-aliceblue;
             padding-bottom: 1rem;
             @include bot-line(1px, dotted, $color-black );
             margin-bottom: 1rem;
+
             .followus-title {
                 padding: 0.75rem 0;
             }
+
             .followus-logo-holder {
                 .followus-item {
                     padding: 0.3rem;
                 }
             }
         }
+
         .copyright {
             .copyright-content {
                 background-color: $color-dimgray;
@@ -224,6 +264,31 @@ $color-dimgray: dimgray;
 }
 
 @media (min-width: 768px) {
+    .header {
+        gap: 1rem;
+        @include display-flex(row, flex-start, center);
+
+        .header-logo {
+            width: 5vw;
+            padding-top: 1rem;
+            margin-top: -15px;
+            margin-left: 5vw;
+        }
+
+        .header-nav {
+            @include display-flex(row, center, center);
+
+            .header-button {
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .header-button:hover {
+                background-color: $color-darkorange;
+            }
+        }
+    }
+
     .blog {
         .blog-list {
             @include display-flex(row, center, center);
@@ -231,6 +296,63 @@ $color-dimgray: dimgray;
             .blog-list-item {
                 @include display-flex(column, center, center);
                 width: 30vw;
+            }
+        }
+    }
+
+
+    .footer {
+        background-color: $color-gray;
+        .footer-section {
+            @include display-flex(column, flex-start, flex-start);
+            width: 90vw;
+            .footer-section-main {
+                @include display-flex(row, flex-start, flex-start);
+                gap:2rem;
+                .footer-about {
+                    width: 25%;
+                    .footer-about-logo {
+                        width: 10vw;
+                        padding-top: 1rem;
+                    }
+                    .footer-about-content {
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        color: $color-aliceblue;
+                        @include bot-line(0px, none, $color-black );
+                    }
+                }
+                .join {
+                    width: 25%;
+                    @include bot-line(0px, none, $color-black );
+                }
+                .links {
+                    width: 25%;
+                    .links-body {
+                        @include display-flex(column, flex-start, flex-start);
+                        .link-item {
+                            color: $color-aliceblue;
+                            text-decoration-line: none;
+                            padding: 0.25rem;
+                            @include bot-line(1px, dotted, $color-black );
+                            width: 90%;
+                        }
+                    }
+                }
+                .followus {
+                    width: 20%;
+                    color: $color-aliceblue;
+                    @include bot-line(0px, none, $color-black );
+                }
+            }
+
+            .copyright {
+                .copyright-content {
+                    background-color: $color-dimgray;
+                    margin: 1rem 0rem;
+                    padding: 0.75rem;
+                    color: $color-aliceblue;
+                }
             }
         }
     }

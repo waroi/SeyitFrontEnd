@@ -183,6 +183,27 @@
       color: aliceblue; }
 
 @media (min-width: 768px) {
+  .header {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    .header .header-logo {
+      width: 5vw;
+      padding-top: 1rem;
+      margin-top: -15px;
+      margin-left: 5vw; }
+    .header .header-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .header .header-nav .header-button {
+        padding: 0.5rem;
+        border-radius: 0.5rem; }
+      .header .header-nav .header-button:hover {
+        background-color: darkorange; }
   .blog .blog-list {
     display: flex;
     flex-direction: row;
@@ -194,4 +215,53 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 30vw; } }
+      width: 30vw; }
+  .footer {
+    background-color: gray; }
+    .footer .footer-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 90vw; }
+      .footer .footer-section .footer-section-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem; }
+        .footer .footer-section .footer-section-main .footer-about {
+          width: 25%; }
+          .footer .footer-section .footer-section-main .footer-about .footer-about-logo {
+            width: 10vw;
+            padding-top: 1rem; }
+          .footer .footer-section .footer-section-main .footer-about .footer-about-content {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            color: aliceblue;
+            border-bottom: 0px none black; }
+        .footer .footer-section .footer-section-main .join {
+          width: 25%;
+          border-bottom: 0px none black; }
+        .footer .footer-section .footer-section-main .links {
+          width: 25%; }
+          .footer .footer-section .footer-section-main .links .links-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start; }
+            .footer .footer-section .footer-section-main .links .links-body .link-item {
+              color: aliceblue;
+              text-decoration-line: none;
+              padding: 0.25rem;
+              border-bottom: 1px dotted black;
+              width: 90%; }
+        .footer .footer-section .footer-section-main .followus {
+          width: 20%;
+          color: aliceblue;
+          border-bottom: 0px none black; }
+      .footer .footer-section .copyright .copyright-content {
+        background-color: dimgray;
+        margin: 1rem 0rem;
+        padding: 0.75rem;
+        color: aliceblue; } }

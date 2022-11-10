@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand navbar-title" href="#">Makstosei<em class="fw-bold link-warning fs-1">.</em></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">BLOG ENTRIES</a></li>
+                                <li><a class="dropdown-item" href="#">POST DETAILS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="preview container-md px-0">
+        <div id="preview-carousel" class="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active ps-xl-5 bg-success">
+                    <div style="height: 250px" class="container d-flex flex-column justify-content-center">
+                        <h3 class="">Type</h3>
+                        <h4 class="">Title</h4>
+                        <ul class="list-unstyled d-flex ">
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Author</a><span
+                                    class="mx-3 text-white">|</span>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">11 Ekim 2022</a><span
+                                    class="mx-3 text-white">|</span>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">12 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item ps-xl-5 bg-primary">
+                    <div style="height: 250px" class="container d-flex flex-column justify-content-center">
+                        <h3 class="">Type</h3>
+                        <h4 class="">Title</h4>
+                        <ul class="list-unstyled d-flex ">
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Author</a><span
+                                    class="mx-3 text-white">|</span>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">11 Ekim 2022</a><span
+                                    class="mx-3 text-white">|</span>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">12 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item ps-xl-5 bg-danger">
+                    <div style="height: 250px" class="container d-flex flex-column justify-content-center">
+                        <h3 class="">Type</h3>
+                        <h4 class="">Title</h4>
+                        <ul class="list-unstyled d-flex ">
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Author</a><span
+                                    class="mx-3 text-white">|</span>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">11 Ekim 2022</a><span
+                                    class="mx-3 text-white">|</span>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">12 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item ps-xl-5 bg-warning">
+                    <div style="height: 250px" class="container d-flex flex-column justify-content-center">
+                        <h3 class="">Type</h3>
+                        <h4 class="">Title</h4>
+                        <div class="">
+                            <a class="text-decoration-none text-white" href="#">Author</a><span
+                                class="mx-3 text-white">|</span>
+                            <a class="text-decoration-none text-white" href="#">11 Ekim 2022</a><span
+                                class="mx-3 text-white">|</span>
+                            <a class="text-decoration-none text-white" href="#">12 Comments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#preview-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#preview-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="banner container-md d-flex justify-content-center align-content-center bg-dark px-0 my-5"
+        style="height:200px">
+        <div class="row d-flex flex-wrap">
+            <div class="col-md-8">
+                <h2 class="align-middle text-warning text-md-start ">test header</h2>
+                <h4 class="align-middle text-white text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing
+                </h4>
+            </div>
+            <div class="col-md-4">
+                <button class="bg-warning p-2">Download Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="main container-md px-0 d-flex flex-row">
+        <div class="row">
+            <div class="blogs col-8 bg-secondary my-1">
+                <div class="blog1 card">
+                    <img src=""
+                        alt="">
+                    <h5 class="text-warning fw-bold mx-5 mt-3">LIFESTYLE</h5>
+                    <h4 class="text-dark fw-bolder mx-5 ">This Is Example Title</h4>
+                    <div class="d-flex flex-row mx-5 gap-2 flex-wrap">
+                        <a class="text-decoration-none text-info text-secondary p-1" href="#">Author</a>
+                        <a class="text-decoration-none text-info text-secondary p-1" href="#">11 Ekim 2022</a>
+                        <a class="text-decoration-none text-info text-secondary p-1" href="#">12 Comments</a>
+                    </div>
+                    <hr class=" mx-3 my-3">
+                    <p class="content mx-5 my-2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio fugit et omnis libero excepturi.
+                        Ullam id fuga eos velit vero nesciunt, cumque laborum autem aspernatur itaque expedita impedit
+                        facere quo dicta veritatis porro voluptate quos accusantium dolor nulla quidem suscipit.
+                    </p>
+                    <hr class="mx-3 my-3">
+                    <div class="d-flex  justify-content-between">
+                        <div class="d-flex flex-row mx-5 gap-1 flex-wrap">
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag1,</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag2,</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag3</a>
+                        </div>
+                        <div style="height: 50px ;" class="d-flex flex-row flex-wrap mx-5">
+                            <a class="text-decoration-none text-secondary p-1" href="#">Facebook</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog2 card d-flex flex-column mt-5">
+                    <img src="https://templatemo.com/templates/templatemo_551_stand_blog/assets/images/blog-post-01.jpg"
+                        alt="">
+                    <h2 class="mx-5 my-4">LIFESTYLE</h2>
+                    <div class="d-flex flex-row mx-5 gap-2">
+                        <a class="text-decoration-none text-secondary p-1" href="#">Author</a>
+                        <a class="text-decoration-none text-secondary p-1" href="#">11 Ekim 2022</a>
+                        <a class="text-decoration-none text-secondary p-1" href="#">12 Comments</a>
+                    </div>
+                    <hr class=" mx-3 p-1">
+                    <p class="content mx-5">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio fugit et omnis libero excepturi.
+                        Ullam id fuga eos velit vero nesciunt, cumque laborum autem aspernatur itaque expedita impedit
+                        facere quo dicta veritatis porro voluptate quos accusantium dolor nulla quidem suscipit.
+                    </p>
+                    <hr class="">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-content-center mx-5 gap-1">
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag1</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag2</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag3</a>
+                        </div>
+                        <div class="d-flex flex-row align-content-center mx-5">
+                            <a class="text-decoration-none text-secondary p-1" href="#">Facebook</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar col-4 my-1 bg-secondary">
+                <h2>RECENT POSTS</h2>
+                <P>Lorem ipsum dolor sit amet consectetur.</P>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>

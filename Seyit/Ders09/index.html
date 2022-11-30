@@ -14,40 +14,35 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand navbar-title" href="#">Makstosei<em class="fw-bold link-warning fs-1">.</em></a>
+                <a class="navbar-brand navbar-title fw-bolder fs-3" href="#">MAKSTOSEI<span class="fw-bold link-warning fs-1">.</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <div class="collapse  navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item pb-2">
+                            <a class="nav-link active text-warning text-center fw-bold" aria-current="page" href="#">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                        <li class="nav-item pb-2">
+                            <a class="nav-link text-center text-dark fw-bold" href="#">ABOUT US</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">BLOG ENTRIES</a></li>
-                                <li><a class="dropdown-item" href="#">POST DETAILS</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">CONTACT US</a></li>
-                            </ul>
+                        <li class="nav-item pb-2">
+                            <a class="nav-link text-center text-dark fw-bold" href="#">BLOG ENTRIES</a>
+                        </li>
+                        <li class="nav-item pb-2">
+                            <a class="nav-link text-center text-dark fw-bold" href="#">POST DETAIL</a>
+                        </li>
+                        <li class="nav-item pb-2">
+                            <a class="nav-link text-center text-dark fw-bold" href="#">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="preview container-md px-0">
+    <div class="preview container-lg px-0">
         <div id="preview-carousel" class="carousel" data-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active ps-xl-5 bg-success">
@@ -131,31 +126,30 @@
             </button>
         </div>
     </div>
-    <div class="banner container-md d-flex justify-content-center align-content-center bg-dark px-0 my-5"
-        style="height:200px">
-        <div class="row d-flex flex-wrap">
-            <div class="col-md-8">
-                <h2 class="align-middle text-warning text-md-start ">test header</h2>
-                <h4 class="align-middle text-white text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing
+    <div class="banner container-lg">
+        <div class="row p-4 bg-dark my-5 text-center text-md-start align-items-center flex-column flex-md-row">
+            <div class="col-md-8 col-8">
+                <h2 class="text-warning">test header</h2>
+                <h4 class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing
                 </h4>
             </div>
-            <div class="col-md-4">
-                <button class="bg-warning p-2">Download Now</button>
+            <div class="col d-flex justify-content-center justify-content-md-end align-items-center">
+                <button class="d-md-block bg-warning text-nowrap">Download Now</button>
             </div>
         </div>
     </div>
-    <div class="main container-md px-0 d-flex flex-row">
-        <div class="row">
-            <div class="blogs col-8 bg-secondary my-1">
+    <div class="main container px-0">
+        <div class="row align-content-center align-content-xl-start flex-column flex-xl-row">
+            <div class="blogs col-12 col-xl-8 my-1">
                 <div class="blog1 card">
-                    <img src=""
+                    <img src="https://templatemo.com/templates/templatemo_551_stand_blog/assets/images/blog-post-01.jpg"
                         alt="">
                     <h5 class="text-warning fw-bold mx-5 mt-3">LIFESTYLE</h5>
                     <h4 class="text-dark fw-bolder mx-5 ">This Is Example Title</h4>
                     <div class="d-flex flex-row mx-5 gap-2 flex-wrap">
-                        <a class="text-decoration-none text-info text-secondary p-1" href="#">Author</a>
-                        <a class="text-decoration-none text-info text-secondary p-1" href="#">11 Ekim 2022</a>
-                        <a class="text-decoration-none text-info text-secondary p-1" href="#">12 Comments</a>
+                        <a class="text-decoration-none text-secondary p-1" href="#">Author</a><span class="p-1 text-secondary">|</span>
+                        <a class="text-decoration-none  text-secondary p-1" href="#">11 Ekim 2022</a><span class="p-1 text-secondary">|</span>
+                        <a class="text-decoration-none  text-secondary p-1" href="#">12 Comments</a>
                     </div>
                     <hr class=" mx-3 my-3">
                     <p class="content mx-5 my-2">
@@ -166,12 +160,13 @@
                     <hr class="mx-3 my-3">
                     <div class="d-flex  justify-content-between">
                         <div class="d-flex flex-row mx-5 gap-1 flex-wrap">
+                            <i class="bi bi-tags-fill"></i>
                             <a class="text-decoration-none text-secondary p-1" href="#">Tag1,</a>
                             <a class="text-decoration-none text-secondary p-1" href="#">Tag2,</a>
                             <a class="text-decoration-none text-secondary p-1" href="#">Tag3</a>
                         </div>
                         <div style="height: 50px ;" class="d-flex flex-row flex-wrap mx-5">
-                            <a class="text-decoration-none text-secondary p-1" href="#">Facebook</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Facebook,</a>
                             <a class="text-decoration-none text-secondary p-1" href="#">Twitter</a>
                         </div>
                     </div>
@@ -181,9 +176,9 @@
                         alt="">
                     <h2 class="mx-5 my-4">LIFESTYLE</h2>
                     <div class="d-flex flex-row mx-5 gap-2">
-                        <a class="text-decoration-none text-secondary p-1" href="#">Author</a>
-                        <a class="text-decoration-none text-secondary p-1" href="#">11 Ekim 2022</a>
-                        <a class="text-decoration-none text-secondary p-1" href="#">12 Comments</a>
+                        <a class="text-decoration-none text-secondary p-1" href="#">Author</a><span class="p-1 text-secondary">|</span>
+                        <a class="text-decoration-none  text-secondary p-1" href="#">11 Ekim 2022</a><span class="p-1 text-secondary">|</span>
+                        <a class="text-decoration-none  text-secondary p-1" href="#">12 Comments</a>
                     </div>
                     <hr class=" mx-3 p-1">
                     <p class="content mx-5">
@@ -191,27 +186,92 @@
                         Ullam id fuga eos velit vero nesciunt, cumque laborum autem aspernatur itaque expedita impedit
                         facere quo dicta veritatis porro voluptate quos accusantium dolor nulla quidem suscipit.
                     </p>
-                    <hr class="">
+                    <hr class="mx-3 my-3">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex flex-row align-content-center mx-5 gap-1">
-                            <a class="text-decoration-none text-secondary p-1" href="#">Tag1</a>
-                            <a class="text-decoration-none text-secondary p-1" href="#">Tag2</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag1,</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Tag2,</a>
                             <a class="text-decoration-none text-secondary p-1" href="#">Tag3</a>
                         </div>
                         <div class="d-flex flex-row align-content-center mx-5">
-                            <a class="text-decoration-none text-secondary p-1" href="#">Facebook</a>
+                            <a class="text-decoration-none text-secondary p-1" href="#">Facebook,</a>
                             <a class="text-decoration-none text-secondary p-1" href="#">Twitter</a>
                         </div>
                     </div>
                 </div>
+               <div class="container-lg p-0 m-0 row">
+                <a class="d-flex justify-content-center p-3 my-3 bg-warning h4 text-light" href="">VIEW ALL POSTS</a>
+               </div>
+               <hr class="d-xl-none p-3">
             </div>
-            <div class="sidebar col-4 my-1 bg-secondary">
-                <h2>RECENT POSTS</h2>
-                <P>Lorem ipsum dolor sit amet consectetur.</P>
+            <div class="sidebar p-4 pt-sm-0 col-12 col-xl-4 my-1">
+                <div class="form-floating mb-3">
+                    <input type="search" class="form-control" id="floatingInput" placeholder="typesearch">
+                    <label for="floatingInput">Type To Search</label>
+                  </div>
+                  
+              
+                  <div class="recent-posts">
+                    <h4 class="fw-bold">RECENT POSTS</h4>
+                    <hr>
+                    <ul class="w-100 list-unstyled">
+                        <li>
+                            <a class="fw-bold h5 text-dark text-decoration-none">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
+                            <p class="text-secondary">11 Ekim 1991</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="fw-bold h5  text-dark text-decoration-none">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
+                            <p class="text-secondary">11 Ekim 1991</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="fw-bold h5  text-dark text-decoration-none">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
+                            <p class="text-secondary">11 Ekim 1991</p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="categories">
+                    <h4 class="fw-bold mt-5">CATEGORIES</h4>
+                    <hr>
+                    <ul class="w-100 list-unstyled">
+                        <li class="my-3">
+                            <a class="fw-bold h6  text-dark text-decoration-none"><span>- </span>Lifestyle</a>
+                        </li>
+                        <li class="my-3">
+                            <a class="fw-bold h5  text-dark text-decoration-none"><span>- </span>Sport</a>
+                        </li>
+                        <li class="my-3">
+                            <a class="fw-bold h5  text-dark text-decoration-none"><span>- </span>Nature</a>
+                        </li>
+                    </ul>
+                  </div>   
+                  <div class="tags">
+                    <h4 class="fw-bold mt-5">TAGS</h4>
+                    <hr>
+                    <ul class="w-100 list-unstyled d-flex flex-wrap gap-2">
+                        <li class="p-2 bg-secondary">
+                            <a class="fw-bold h5  text-dark text-decoration-none">Lifestyle</a>
+                        </li>
+                        <li class="p-2 bg-secondary">
+                            <a class="fw-bold h5  text-dark text-decoration-none">Sport</a>
+                        </li>
+                        <li class=" p-2 bg-secondary">
+                            <a class="fw-bold h5  text-dark text-decoration-none">Nature</a>
+                        </li>
+                        <li class=" p-2 bg-secondary">
+                            <a class="fw-bold h5  text-dark text-decoration-none">Motivation</a>
+                        </li>
+                        <li class=" p-2 bg-secondary">
+                            <a class="fw-bold h5  text-dark text-decoration-none">Responsive</a>
+                        </li>
+                        <li class=" p-2 bg-secondary">
+                            <a class="fw-bold h5  text-dark text-decoration-none">HTML5</a>
+                        </li>
+                    </ul>
+                  </div>      
             </div>
         </div>
-
-
     </div>
 
 

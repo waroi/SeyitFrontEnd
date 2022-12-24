@@ -10,7 +10,7 @@
     <header class="bg-dark">
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="navbar-container container-xl bg-dark p-0">
-                <div class="navbar-row row w-100 justify-content-between bg-dark">
+                <div class="navbar-row w-100 justify-content-between bg-dark">
                     <div class="navbar-logo col-3 bg-dark p-4">
                         <a class="navbar-brand bg-dark" href="#">
                             <img class="navbar-brand-logo bg-dark" src="./images/logo.png" alt="brandlogo">
@@ -66,14 +66,14 @@
     </header>
     <div class="container bg-primary p-5 rounded-5">
         <div class="row  d-flex justify-content-center gap-5">
-            <div class="featuredgames col-lg-8 bg-dark rounded-5 mt-5">
+            <div class="featuredgames col-12 col-xl-8 bg-dark rounded-5 mt-5">
                 <div class="heading-section">
                     <h2 class="text-info fw-bolder p-4"><span class="text-white text-decoration-underline">Featured</span>
                         Games</h2>
                 </div>
                 <div class="featuredgames-slide row px-3 pb-4">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-4">
                             <img class="img-fluid w-100 rounded-4" src="./images/featured-01.jpg" alt="">
                             <div class="text-white align-items-center">
                                <div class="mt-2 d-flex align-items-start justify-content-between">
@@ -106,7 +106,7 @@
                                </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4 mt-sm-5 mt-md-0">
                             <img class="img-fluid w-100 rounded-4" src="./images/featured-02.jpg" alt="">
                             <div class="text-white align-items-center">
                                <div class="mt-2 d-flex align-items-start justify-content-between">
@@ -139,7 +139,7 @@
                                </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4 mt-sm-5 mt-md-0">
                             <img class="img-fluid w-100 rounded-4" src="./images/featured-03.jpg" alt="">
                             <div class="text-white align-items-center">
                                <div class="mt-2 d-flex align-items-start justify-content-between">
@@ -175,95 +175,130 @@
                     </div>
                 </div>
             </div>
-            <div class="games-library col bg-dark rounded-5 mt-5">
+            <div class="top-downloaded col bg-dark rounded-5 mt-5">
                 <div class="heading-section">
-                    <h2 class="text-info fw-bold p-4"><span class="text-white text-decoration-underline">Your Gaming</span>
-                        Library</h2>
+                    <h2 class="text-info fw-bold p-4"><span class="text-white text-decoration-underline">Top</span>
+                        Downloaded</h2>
                 </div>
-                <div class="games-library-list col-12">
-                    <div class="game-item row align-items-center mx-1">
-                        <div class="col-12 col-md-6 col-lg d-flex justify-content-center">
-                            <img class="rounded-4 mb-sm-4 mb-0" src="./images/popular-05.jpg" style="width: 80px; height: 80px;" alt="">
+                <div class="top-downloaded-list mt-4">
+                    <div class="game-item d-flex gap-4 my-4 mx-4">
+                        <img class="rounded-4" src="./images/popular-05.jpg" style="width: 80px; height: 80px;" alt="">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-start align-self-start fw-bold text-white">Fornite</h5>
+                            <h6 class="text-start text-white-50">Sandbox</h6>
+                            <div class="text-white d-flex gap-3">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
+                                    fill="currentColor"
+                                    class="text-warning d-inline bi bi-star-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <p class="d-inline ms-1">4.8</p></div>
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                    </svg>
+                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                        2.8M
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Fornite</h5>
-                            <h6 class="text-center text-white-50">Sandbox</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Date Added</h6>
-                            <h6 class="text-center  text-white-50">22/06/2036</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Hours Played</h6>
-                            <h6 class="text-center  text-white-50">740 H 52 Mins</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Currently</h6>
-                            <h6 class="text-center  text-white-50">Downloaded</h6>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg justify-content-center d-flex mt-md-0 mt-4">
-                            <div class="btn btn-dark borders rounded-pill text-info align-self-center border-1 border-info px-4 py-2">Downloaded
+                    </div>               
+                    <hr class="text-secondary my-4 mx-4">
+                    <div class="game-item d-flex gap-4 mx-4">
+                        <img class="rounded-4" src="./images/popular-05.jpg" style="width: 80px; height: 80px;" alt="">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-start align-self-start fw-bold text-white">Fornite</h5>
+                            <h6 class="text-start text-white-50">Sandbox</h6>
+                            <div class="text-white d-flex gap-3">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
+                                    fill="currentColor"
+                                    class="text-warning d-inline bi bi-star-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <p class="d-inline ms-1">4.8</p></div>
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                    </svg>
+                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                        2.8M
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>               
                     <hr class="text-secondary  mx-4">
-                    <div class="game-item row align-items-center mx-1">
-                        <div class="col-12 col-md-6 col-lg d-flex justify-content-center">
-                            <img class="rounded-4 mb-sm-4 mb-0" src="./images/popular-03.jpg" style="width: 80px; height: 80px;" alt="">
-                        </div>
-                        <div class="col">
-                            <h6 class="text-center fw-bold text-white">Dota 2</h5>
-                            <h6 class="text-center text-white-50">Sandbox</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Date Added</h6>
-                            <h6 class="text-center  text-white-50">24/08/2036</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Hours Played</h6>
-                            <h6 class="text-center  text-white-50">634 H 22 Mins</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Currently</h6>
-                            <h6 class="text-center  text-white-50">Downloaded</h6>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg justify-content-center d-flex mt-md-0 mt-4">
-                            <div class="btn btn-dark rounded-pill text-secondary align-self-center border-1 border-secondary px-4 py-2">Downloaded
+                    <div class="game-item d-flex gap-4 my-4 mx-4">
+                        <img class="rounded-4" src="./images/popular-05.jpg" style="width: 80px; height: 80px;" alt="">
+                        <div class="d-flex flex-column">
+                            <h6 class="text-start align-self-start fw-bold text-white">Fornite</h5>
+                            <h6 class="text-start text-white-50">Sandbox</h6>
+                            <div class="text-white d-flex gap-3">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
+                                    fill="currentColor"
+                                    class="text-warning d-inline bi bi-star-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <p class="d-inline ms-1">4.8</p></div>
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                    </svg>
+                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                        2.8M
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                     <hr class="text-secondary  mx-4">
-                    <div class="game-item row align-items-center mx-1">
-                        <div class="col-12 col-md-6 col-lg d-flex justify-content-center">
-                            <img class="rounded-4 mb-sm-4 mb-0" src="./images/popular-06.jpg" style="width: 80px; height: 80px;" alt="">
-                        </div>
-                        <div class="col">
-                            <h6 class="text-center fw-bold text-white">CS-GO</h5>
-                            <h6 class="text-center text-white-50">Sandbox</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Date Added</h6>
-                            <h6 class="text-center  text-white-50">21/04/2036</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Hours Played</h6>
-                            <h6 class="text-center  text-white-50">892 H 14 Mins</h6>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg">
-                            <h6 class="text-center fw-bold text-white">Currently</h6>
-                            <h6 class="text-center  text-white-50">Downloaded</h6>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg justify-content-center d-flex mt-md-0 mt-4">
-                            <div class="btn btn-dark rounded-pill text-info align-self-center border-1 border-info px-4 py-2">Downloaded
-                            </div>
-                        </div>
                     </div>
                     <div class="col py-4">
-                        <div class="btn-games-library col-12 d-flex position-relative border-0 justify-content-center mt-4">
-                        <div class="btn btn-info rounded-pill text-white align-self-center border-0 px-4 py-2">View Your Library</div>
+                        <div class="btn-top-downloaded col-12 d-flex position-relative border-0 justify-content-center ">
+                        <div class="btn btn-info bg-dark border-0 text-info fw-bold align-self-center  px-4">View All Games</div>
                     </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-12">
+                <h2 class="text-center text-info fw-bolder my-5"><span class="text-decoration-underline text-white">How to Start Your</span> Live Stream</h2>
+                <div class="row text-secondary gap-5 d-flex justify-content-between">
+                    <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50 p-4">
+                        <img src="./images/service-01.jpg" alt="">
+                        <h5 class="text-white">Go To Your Profile</h5>
+                        <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.</p>
+                    </div>
+                    <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50  p-4">
+                        <img src="./images/service-01.jpg" alt="">
+                        <h5 class="text-white">Go To Your Profile</h5>
+                        <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.</p>
+                    </div>
+                    <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50  p-4">
+                        <img src="./images/service-01.jpg" alt="">
+                        <h5 class="text-white">Go To Your Profile</h5>
+                        <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.</p>
+                    </div>
+
+                </div>
+           
             </div>
         </div>
     </div>

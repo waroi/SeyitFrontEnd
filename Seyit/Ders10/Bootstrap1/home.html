@@ -5,63 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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">
 </head>
 <body class="bg-dark">
     <header class="bg-dark">
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="navbar-container container-xl bg-dark p-0">
-                <div class="navbar-row row w-100 justify-content-between bg-dark">
-                    <div class="navbar-logo col-3 bg-dark p-4">
-                        <a class="navbar-brand bg-dark" href="#">
-                            <img class="navbar-brand-logo bg-dark" src="./images/logo.png" alt="brandlogo">
-                        </a>
-                    </div>
-                    <div class="navbar-search d-xl-flex d-none col-4 bg-dark align-self-center p-2">
-                        <div class="input-group bg-primary rounded-5 mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="text-secondary text-center align-self-center ms-3 me-3 bi bi-search"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                            <input type="text" class="form-control text-black-50 bg-primary rounded-5 border-0 p-2"
-                                placeholder="Type something" aria-label="Search" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                    <div class="navbar-links col-xl-5 col-2 bg-dark d-flex justify-content-end align-items-center">
-                        <button class="navbar-toggler navbar-links-togglebutton " type="button"
-                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon bg-primary p-3"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav nav-pills bg-dark d-flex flex-nowrap justify-content-end w-100 gap-2 me-auto mb-2 mb-lg-0">
-                                <li class="navbar-home nav-item bg-dark">
-                                    <a class="nav-link text-secondary text-info rounded-5" href="#">Home</a>
-                                </li>
-                                <li class="nav-item navbar-browse bg-dark ">
-                                    <a class="nav-link text-secondary rounded-5" aria-current="page" href="./browse.html">Browse</a>
-                                </li>
-                                <li class="nav-item navbar-details bg-dark">
-                                    <a class="nav-link text-secondary rounded-5" href="#">Details</a>
-                                </li>
-                                <li class="nav-item navbar-streams bg-dark">
-                                    <a class="nav-link text-secondary rounded-5" href="#">Streams</a>
-                                </li>
-                                <li class=" nav-item navbar-profile bg-dark">
-                                    <button class="col d-flex flex-nowrap btn btn-primary rounded-5" type="button">
-                                        <span
-                                            class="col text-bg-dark align-self-center text-secondary bg-opacity-10">Profile</span>
-                                        <img class="col rounded-circle ms-2" src="./images/profile.jpg" alt="resm"
-                                            style="height:2rem;">
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-xl">
+                <div class="col-3">
+                    <a class="navbar-brand" href="./home.html">
+                        <img src="./images/logo.png" alt="Bootstrap" width="191" height="auto">
+                      </a>
+                </div>
+                <div class="navbar-search d-lg-flex d-none col-3 bg-dark align-self-start">
+                    <div class="input-group bg-primary rounded-5 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-secondary text-center align-self-center ms-3 me-3 bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <input type="text" class="form-control text-black-50 bg-primary rounded-5 border-0 p-2"
+                            placeholder="Type something" aria-label="Search" aria-describedby="basic-addon1">
                     </div>
                 </div>
-            </div>
-        </nav>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-pills">
+                          <li class="nav-item active">
+                            <a class="nav-link text-info rounded-5 px-4" aria-current="page" href="./home.html">Home</a>
+                          </li>
+                          <li class="nav-item nav-pills rounded-5 px-3">
+                            <a class="nav-link" href="./browse.html">Browse</a>
+                          </li>
+                          <li class="nav-item nav-pills rounded-5 px-3">
+                            <a class="nav-link">Details</a>
+                          </li>
+                          <li class="nav-item nav-pills rounded-5 px-3">
+                            <a class="nav-link">Streams</a>
+                          </li>
+                          <li><button class="btn btn-primary d-flex flex-nowrap rounded-5 px-3" type="button">
+                            <span
+                                class="text-bg-dark align-self-center text-secondary bg-opacity-10">Profile</span>
+                            <img class="col rounded-circle ms-2" src="./images/profile.jpg" alt="resm"
+                                style="height:2rem;">
+                        </button></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+             
+          </nav>
     </header>
     <div class="container bg-primary p-5 rounded-5">
         <div class="banner">
@@ -495,5 +491,8 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
 </body>
 </html>

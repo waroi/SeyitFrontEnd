@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./media/img/nstart-logo/nstart-logo-nav.png" alt="Logo" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-end text-white active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-end text-white-50" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-end text-white-50" href="#">F.A.Q.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-end text-white-50" href="#">MY ACCOUNT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-end text-white-50" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                GAMES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-end text-lg-start" href="#">MB II: Bannerlord</a></li>
+                                <li><a class="dropdown-item text-end text-lg-start" href="#">Red Dead Redemption II</a></li>
+                                <li><a class="dropdown-item text-end  text-lg-start" href="#">God of War Ragnarok</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-end text-lg-start" href="#">My Purchases</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-info text-white" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body class="main-body">
+        <div id="latestcarousel" class="latestcarousel carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#latestcarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#latestcarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#latestcarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner banner">
+                <div class="banner-main carousel-item active" data-bs-interval="8000">
+                    <img src="./media/img/main-page-images/mb1.jpg" class="banner-background d-block w-100" alt="...">
+                    <div class="banner-content carousel-caption d-flex flex-column align-items-center justify-content-center h-100 ">
+                        <h2 class="banner-title fw-bolder text-white animate__animated animate__bounceInRight animate__delay-1s">Turkey's Biggest Gaming Platform </h2>
+                        <p class="banner-description d-none d-md-block fw-bold text-white animate__animated animate__bounceInLeft animate__delay-2s">NStart is the leading gaming platform in
+                            Turkey!.</p>
+                        <button class="banner-button text-white fs-3 btn btn-info animate__animated animate__bounceInUp animate__delay-3s">Learn More</button>
+                    </div>
+                </div>
+                <div class="banner-main carousel-item" data-bs-interval="8000">
+                    <img src="./media/img/main-page-images/gow.jpg" class="banner-background d-block w-100" alt="...">
+                    <div class="banner-content carousel-caption  d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="banner-title fw-bolder text-white animate__animated animate__bounceInRight animate__delay-1s"> Join NStart Now! </h5>
+                        <p class="banner-description d-none d-md-block fw-bold text-white animate__animated animate__bounceInLeft animate__delay-2s">With instant access to games, play anywhere and
+                            anytime you want! </p>
+                        <button class="banner-button fs-3 text-white  btn btn-info animate__animated animate__bounceInUp animate__delay-3s">Learn More</button>
+                    </div>
+                </div>
+                <div class="banner-main carousel-item" data-bs-interval="8000">
+                    <img src="./media/img/main-page-images/rdr2.jpg" class="banner-background d-block w-100" alt="...">
+                    <div class="banner-content carousel-caption  d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="banner-title fw-bolder text-white animate__animated animate__bounceInRight animate__delay-1s"> Cross Platform </h5>
+                        <p class="banner-description d-none d-md-block fw-bold text-white animate__animated animate__bounceInLeft animate__delay-2s"> Our games are available on all platforms. </p>
+                        <button class="banner-button fs-3 text-white btn btn-info animate__animated animate__bounceInUp animate__delay-3s">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev bg-secondary bg-opacity-10" type="button"
+                data-bs-target="#latestcarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next bg-secondary bg-opacity-10" type="button"
+                data-bs-target="#latestcarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="main-content container my-5 d-flex flex-column align-items-center">
+            <h1 class="main-title text-primary text-center fw-normal">Why Should I Choose NStart?</h1>
+            <h5 class="text-center fw-normal">NStart is Turkey's leading "Game Distributor". Your games will be instantly displayed on your library
+                once you have completed the purchase.</h5>
+            <hr class="container-fluid">
+            <h6 class="text-center">Customer support is available 24/7</h6>
+            <button class="btn btn-info text-white fs-3 my-2">Learn More</button>
+        </div>
+        <div class="main-latest container my-5">
+            <h3 class="latest-title text-center text-primary fw-bold my-4">Our Latest Games </h3>
+            <div class="row g-3">
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./media/img/bannerlord-images/mb-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Mount & Blade II: Bannerlord</h5>
+                          <p class="card-text">A strategy/action RPG. Create a character, engage in diplomacy, craft, trade and conquer new lands in a vast medieval sandbox. Raise armies to lead into battle and command and fight alongside your troops in massive real-time battles. </p>
+                          <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./media/img/main-page-images/rdr-card.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Red Dead Redemption II</h5>
+                          <p class="card-text"> Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. </p>
+                          <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./media/img/main-page-images/gow.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">God of War Ragnarok</h5>
+                          <p class="card-text">His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. </p>
+                          <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./media/img/main-page-images/gow.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">God of War Ragnarok</h5>
+                          <p class="card-text">His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. </p>
+                          <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./media/img/main-page-images/gow.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">God of War Ragnarok</h5>
+                          <p class="card-text">His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. </p>
+                          <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footer bg-primary py-5">
+        <div class="container d-flex justify-content-center align-content-center py-5">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="d-flex d-sm-block flex-column align-items-center">
+                        <img class="img-fluid w-50" src="./media/img/nstart-logo/nstart-logo.png" alt="logo">
+                        <h2 class="fs-2 fw-bold text-info">We Accept</h2>
+                        <hr class="text-info mt-0 container-fluid">
+                        <ul class="list-unstyled d-flex gap-3">
+                            <li>
+                                <i class="fs-3 text-light fa-lg bi bi-coin"></i>
+                            </li>
+                            <li>
+                                <i class="fs-3 text-light bi bi-wallet2"></i>
+                            </li>
+                            <li>
+                                <i class="fs-3 text-light bi bi-credit-card"></i>
+                            </li>
+                            <li>
+                                <i class="fs-3 text-light bi bi-paypal"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 d-flex d-sm-block flex-column align-items-center">
+                    <h2 class="text-info fs-2 fw-bolder">Media</h2>
+                    <hr class="text-info mt-0 container-fluid">
+                    <ul class="list-unstyled d-flex d-sm-block flex-column align-items-center lh-lg">
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Support</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Distiribution</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Jobs</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Workshops</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Contact Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 d-flex d-sm-block flex-column align-items-center">
+                    <h2 class="text-info fs-2 fw-bolder">Website</h2>
+                    <hr class="text-info mt-0 container-fluid">
+                    <ul class="list-unstyled d-flex d-sm-block flex-column align-items-center lh-lg">
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">SSS</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Mount & Blade II: Bannerlord</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">Red Dead Redemption II</a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none" href="#">God of War Ragnarok</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 d-flex d-sm-block flex-column align-items-center">
+                    <h2 class="text-info fs-2 fw-bolder">Newsletter</h2>
+                    <hr class="text-info mt-0 container-fluid">
+                    <div class="container px-5 mx-5 mx-sm-0 px-sm-0">
+                        <p class="text-white">Subscribe to our Newsletter to enjoy daily content on gaming
+                            developments! </p>
+                        <div class="input-group d-flex align-self-sm-center">
+                            <div class="form-floating">
+                                <input type="email" class="form-control form-control-sm" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label class="text-black" for="floatingInput">Email address</label>
+                            </div>
+                            <a class="input-group-text bg-info text-white" id="basic-addon1"><i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <h2 class="text-info fs-3 fw-bolder mt-3">Follow Us On</h2>
+                    <hr class="text-info mt-0 container-fluid">
+                    <ul class="list-unstyled d-flex gap-3">
+                        <li>
+                            <i class="fs-3 text-light bi bi-facebook"></i>
+                        </li>
+                        <li>
+                            <i class="fs-3 text-light bi bi-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fs-3 text-light bi bi-youtube"></i>
+                        </li>
+                        <li>
+                            <i class="fs-3 text-light bi bi-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,74 +1,71 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body class="bg-dark">
     <header class="bg-dark">
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="navbar-container container-xl bg-dark p-0">
-                <div class="navbar-row w-100 justify-content-between bg-dark">
-                    <div class="navbar-logo col-3 bg-dark p-4">
-                        <a class="navbar-brand bg-dark" href="#">
-                            <img class="navbar-brand-logo bg-dark" src="./images/logo.png" alt="brandlogo">
-                        </a>
-                    </div>
-                    <div class="navbar-search d-xl-flex d-none col-4 bg-dark align-self-center p-2">
-                        <div class="input-group bg-primary rounded-5 mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="text-secondary text-center align-self-center ms-3 me-3 bi bi-search"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                            <input type="text" class="form-control text-black-50 bg-primary rounded-5 border-0 p-2"
-                                placeholder="Type something" aria-label="Search" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                    <div class="navbar-links col-xl-5 col-2 bg-dark d-flex justify-content-end align-items-center">
-                        <button class="navbar-links-togglebutton col-4 navbar-toggler" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon bg-primary p-3"></span>
-                        </button>
-                        <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
-                            <ul
-                                class="nav nav-pills bg-dark d-flex flex-nowrap justify-content-end w-100 gap-2 me-auto mb-2 mb-lg-0">
-                                <li class="navbar-home text- nav-item bg-dark">
-                                    <a class="nav-link text-secondary text-info rounded-5" href="#">Home</a>
-                                </li>
-                                <li class="navbar-browse nav-item bg-dark ">
-                                    <a class="nav-link text-secondary rounded-5" aria-current="page" href="#">Browse</a>
-                                </li>
-                                <li class="navbar-details nav-item bg-dark">
-                                    <a class="nav-link text-secondary rounded-5" href="#">Details</a>
-                                </li>
-                                <li class="navbar-streams nav-item bg-dark">
-                                    <a class="nav-link text-secondary rounded-5" href="#">Streams</a>
-                                </li>
-                                <li class="navbar-profile nav-item bg-dark">
-                                    <button class="col d-flex flex-nowrap btn btn-primary rounded-5" type="button">
-                                        <span
-                                            class="col text-bg-dark align-self-center text-secondary bg-opacity-10">Profile</span>
-                                        <img class="col rounded-circle ms-2" src="./images/profile.jpg" alt="resm"
-                                            style="height:2rem;">
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-xl">
+                <div class="col-3">
+                    <a class="navbar-brand" href="./home.html">
+                        <img src="./images/logo.png" alt="Bootstrap" width="191" height="auto">
+                      </a>
+                </div>
+                <div class="navbar-search d-lg-flex d-none col-3 bg-dark align-self-start">
+                    <div class="input-group bg-primary rounded-5 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-secondary text-center align-self-center ms-3 me-3 bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <input type="text" class="form-control text-black-50 bg-primary rounded-5 border-0 p-2"
+                            placeholder="Type something" aria-label="Search" aria-describedby="basic-addon1">
                     </div>
                 </div>
-            </div>
-        </nav>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-pills">
+                          <li class="nav-item active">
+                            <a class="nav-link text-info rounded-5 px-4" aria-current="page" href="./home.html">Home</a>
+                          </li>
+                          <li class="nav-item nav-pills rounded-5 px-3">
+                            <a class="nav-link" href="./browse.html">Browse</a>
+                          </li>
+                          <li class="nav-item nav-pills rounded-5 px-3">
+                            <a class="nav-link">Details</a>
+                          </li>
+                          <li class="nav-item nav-pills rounded-5 px-3">
+                            <a class="nav-link">Streams</a>
+                          </li>
+                          <li><button class="btn btn-primary d-flex flex-nowrap rounded-5 px-3" type="button">
+                            <span
+                                class="text-bg-dark align-self-center text-secondary bg-opacity-10">Profile</span>
+                            <img class="col rounded-circle ms-2" src="./images/profile.jpg" alt="resm"
+                                style="height:2rem;">
+                        </button></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+             
+          </nav>
     </header>
     <div class="container bg-primary p-5 rounded-5">
         <div class="row  d-flex justify-content-center gap-5">
             <div class="featuredgames col-12 col-xl-8 bg-dark rounded-5 mt-5">
                 <div class="heading-section">
-                    <h2 class="text-info fw-bolder p-4"><span class="text-white text-decoration-underline">Featured</span>
+                    <h2 class="text-info fw-bolder p-4"><span
+                            class="text-white text-decoration-underline">Featured</span>
                         Games</h2>
                 </div>
                 <div class="featuredgames-slide row px-3 pb-4">
@@ -76,100 +73,94 @@
                         <div class="col-md-4">
                             <img class="img-fluid w-100 rounded-4" src="./images/featured-01.jpg" alt="">
                             <div class="text-white align-items-center">
-                               <div class="mt-2 d-flex align-items-start justify-content-between">
-                                <h6 class="mt-1" >CS-GO</h6>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
-                                        fill="currentColor"
-                                        class="text-warning d-inline bi bi-star-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg>
-                                    <p class="d-inline ms-1">4.8</p>
+                                <div class="mt-2 d-flex align-items-start justify-content-between">
+                                    <h6 class="mt-1">CS-GO</h6>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="" height="16" fill="currentColor"
+                                            class="text-warning d-inline bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="d-inline ms-1">4.8</p>
+                                    </div>
                                 </div>
-                               </div>
-                               <div  class="d-flex justify-content-between">
-                                <h6 class="text-white-50 mt-1">258K Downloads</h6>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
-                                        <path
-                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                        <path
-                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                    </svg>
-                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
-                                        2.8M
-                                    </p>
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="text-white-50 mt-1">258K Downloads</h6>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                        <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                            2.8M
+                                        </p>
+                                    </div>
                                 </div>
-                               </div>
                             </div>
                         </div>
                         <div class="col-md-4 mt-sm-5 mt-md-0">
                             <img class="img-fluid w-100 rounded-4" src="./images/featured-02.jpg" alt="">
                             <div class="text-white align-items-center">
-                               <div class="mt-2 d-flex align-items-start justify-content-between">
-                                <h6 class="mt-1" >CS-GO</h6>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
-                                        fill="currentColor"
-                                        class="text-warning d-inline bi bi-star-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg>
-                                    <p class="d-inline ms-1">4.8</p>
+                                <div class="mt-2 d-flex align-items-start justify-content-between">
+                                    <h6 class="mt-1">CS-GO</h6>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="" height="16" fill="currentColor"
+                                            class="text-warning d-inline bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="d-inline ms-1">4.8</p>
+                                    </div>
                                 </div>
-                               </div>
-                               <div  class="d-flex justify-content-between">
-                                <h6 class="text-white-50 mt-1">258K Downloads</h6>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
-                                        <path
-                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                        <path
-                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                    </svg>
-                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
-                                        2.8M
-                                    </p>
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="text-white-50 mt-1">258K Downloads</h6>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                        <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                            2.8M
+                                        </p>
+                                    </div>
                                 </div>
-                               </div>
                             </div>
                         </div>
                         <div class="col-md-4 mt-sm-5 mt-md-0">
                             <img class="img-fluid w-100 rounded-4" src="./images/featured-03.jpg" alt="">
                             <div class="text-white align-items-center">
-                               <div class="mt-2 d-flex align-items-start justify-content-between">
-                                <h6 class="mt-1" >CS-GO</h6>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
-                                        fill="currentColor"
-                                        class="text-warning d-inline bi bi-star-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg>
-                                    <p class="d-inline ms-1">4.8</p>
+                                <div class="mt-2 d-flex align-items-start justify-content-between">
+                                    <h6 class="mt-1">CS-GO</h6>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="" height="16" fill="currentColor"
+                                            class="text-warning d-inline bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="d-inline ms-1">4.8</p>
+                                    </div>
                                 </div>
-                               </div>
-                               <div  class="d-flex justify-content-between">
-                                <h6 class="text-white-50 mt-1">258K Downloads</h6>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
-                                        <path
-                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                        <path
-                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                    </svg>
-                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
-                                        2.8M
-                                    </p>
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="text-white-50 mt-1">258K Downloads</h6>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                        <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                            2.8M
+                                        </p>
+                                    </div>
                                 </div>
-                               </div>
                             </div>
                         </div>
                     </div>
@@ -185,122 +176,128 @@
                         <img class="rounded-4" src="./images/popular-05.jpg" style="width: 80px; height: 80px;" alt="">
                         <div class="d-flex flex-column">
                             <h6 class="text-start align-self-start fw-bold text-white">Fornite</h5>
-                            <h6 class="text-start text-white-50">Sandbox</h6>
-                            <div class="text-white d-flex gap-3">
-                                <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
-                                    fill="currentColor"
-                                    class="text-warning d-inline bi bi-star-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <p class="d-inline ms-1">4.8</p></div>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
-                                        <path
-                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                        <path
-                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                    </svg>
-                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
-                                        2.8M
-                                    </p>
+                                <h6 class="text-start text-white-50">Sandbox</h6>
+                                <div class="text-white d-flex gap-3">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
+                                            fill="currentColor" class="text-warning d-inline bi bi-star-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="d-inline ms-1">4.8</p>
+                                    </div>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                        <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                            2.8M
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
-                    </div>               
+                    </div>
                     <hr class="text-secondary my-4 mx-4">
                     <div class="game-item d-flex gap-4 mx-4">
                         <img class="rounded-4" src="./images/popular-05.jpg" style="width: 80px; height: 80px;" alt="">
                         <div class="d-flex flex-column">
                             <h6 class="text-start align-self-start fw-bold text-white">Fornite</h5>
-                            <h6 class="text-start text-white-50">Sandbox</h6>
-                            <div class="text-white d-flex gap-3">
-                                <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
-                                    fill="currentColor"
-                                    class="text-warning d-inline bi bi-star-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <p class="d-inline ms-1">4.8</p></div>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
-                                        <path
-                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                        <path
-                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                    </svg>
-                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
-                                        2.8M
-                                    </p>
+                                <h6 class="text-start text-white-50">Sandbox</h6>
+                                <div class="text-white d-flex gap-3">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
+                                            fill="currentColor" class="text-warning d-inline bi bi-star-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="d-inline ms-1">4.8</p>
+                                    </div>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                        <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                            2.8M
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
-                    </div>               
+                    </div>
                     <hr class="text-secondary  mx-4">
                     <div class="game-item d-flex gap-4 my-4 mx-4">
                         <img class="rounded-4" src="./images/popular-05.jpg" style="width: 80px; height: 80px;" alt="">
                         <div class="d-flex flex-column">
                             <h6 class="text-start align-self-start fw-bold text-white">Fornite</h5>
-                            <h6 class="text-start text-white-50">Sandbox</h6>
-                            <div class="text-white d-flex gap-3">
-                                <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
-                                    fill="currentColor"
-                                    class="text-warning d-inline bi bi-star-fill"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <p class="d-inline ms-1">4.8</p></div>
-                                <div class="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
-                                        <path
-                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                        <path
-                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                    </svg>
-                                    <p class="d-inline text-center align-content-center ms-1 align-items-center">
-                                        2.8M
-                                    </p>
+                                <h6 class="text-start text-white-50">Sandbox</h6>
+                                <div class="text-white d-flex gap-3">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="" height="16"
+                                            fill="currentColor" class="text-warning d-inline bi bi-star-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="d-inline ms-1">4.8</p>
+                                    </div>
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="text-info bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                        <p class="d-inline text-center align-content-center ms-1 align-items-center">
+                                            2.8M
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
-                    </div>               
+                    </div>
                     <hr class="text-secondary  mx-4">
-                    </div>
-                    <div class="col py-4">
-                        <div class="btn-top-downloaded col-12 d-flex position-relative border-0 justify-content-center ">
-                        <div class="btn btn-info bg-dark border-0 text-info fw-bold align-self-center  px-4">View All Games</div>
-                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="btn-top-downloaded col-12 d-flex position-relative border-0 justify-content-center ">
+                        <div class="btn btn-info bg-dark border-0 text-info fw-bold align-self-center  px-4">View All
+                            Games</div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <h2 class="text-center text-info fw-bolder my-5"><span class="text-decoration-underline text-white">How to Start Your</span> Live Stream</h2>
-                <div class="row text-secondary gap-5 d-flex justify-content-between">
-                    <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50 p-4">
-                        <img src="./images/service-01.jpg" alt="">
-                        <h5 class="text-white">Go To Your Profile</h5>
-                        <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.</p>
-                    </div>
-                    <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50  p-4">
-                        <img src="./images/service-01.jpg" alt="">
-                        <h5 class="text-white">Go To Your Profile</h5>
-                        <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.</p>
-                    </div>
-                    <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50  p-4">
-                        <img src="./images/service-01.jpg" alt="">
-                        <h5 class="text-white">Go To Your Profile</h5>
-                        <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.</p>
-                    </div>
-
-                </div>
-           
             </div>
         </div>
+        <div class="col-12">
+            <h2 class="text-center text-info fw-bolder my-5"><span class="text-decoration-underline text-white">How to
+                    Start Your</span> Live Stream</h2>
+            <div class="row text-secondary gap-5 d-flex justify-content-between">
+                <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50 p-4">
+                    <img src="./images/service-01.jpg" alt="">
+                    <h5 class="text-white">Go To Your Profile</h5>
+                    <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is
+                        Bootstrap v5.2.0 layout.</p>
+                </div>
+                <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50  p-4">
+                    <img src="./images/service-01.jpg" alt="">
+                    <h5 class="text-white">Go To Your Profile</h5>
+                    <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is
+                        Bootstrap v5.2.0 layout.</p>
+                </div>
+                <div class="col-sm-12 col-md border rounded-4 border-secondary border-opacity-50  p-4">
+                    <img src="./images/service-01.jpg" alt="">
+                    <h5 class="text-white">Go To Your Profile</h5>
+                    <p class="text-wrap">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is
+                        Bootstrap v5.2.0 layout.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     </div>
 </body>
 <footer class="bg-dark">
@@ -319,7 +316,8 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 </body>
 

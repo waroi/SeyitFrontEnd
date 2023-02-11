@@ -4,6 +4,15 @@
   border-radius: 140px;
   background-color: #fa8606;
 }
+.ztop{
+  position: relative;
+  z-index: 3;
+}
+.zbot{
+  position: relative;
+  z-index: 2;
+}
+
 .c {
   font-size: 4rem;
   font-family: "Artifika";
@@ -25,6 +34,7 @@
 @media screen and (max-width:750px) {
     .c{
         font-size: 3rem;
+        margin-left: -37px;
     }
     .ok{
         font-size: 3rem;
@@ -35,6 +45,7 @@
     .circle{
         width: 70px;
         height: 70px;
+        border-radius: 70px;
     }
     .detail{
         font-size: 2rem;

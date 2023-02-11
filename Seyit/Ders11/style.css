@@ -1,0 +1,43 @@
+.circle {
+  height: 140px;
+  width: 140px;
+  border-radius: 140px;
+  background-color: #fa8606;
+}
+.c {
+  font-size: 4rem;
+  font-family: "Artifika";
+  margin-left: -45px;
+}
+.ok {
+  font-size: 4rem;
+  font-family: "Artifika";
+}
+.close {
+  font-size: 4rem;
+  font-family: "Artifika";
+}
+.detail {
+  font-size: 2.625rem;
+  font-style: italic;
+  font-family: 'Arizonia';
+}
+@media screen and (max-width:750px) {
+    .c{
+        font-size: 3rem;
+    }
+    .ok{
+        font-size: 3rem;
+    }
+    .close{
+        font-size: 2rem;
+    }
+    .circle{
+        width: 70px;
+        height: 70px;
+    }
+    .detail{
+        font-size: 2rem;
+    }
+
+}
